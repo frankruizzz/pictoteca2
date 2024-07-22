@@ -1,0 +1,138 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../img/blurry.jpg");
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.error-message{
+    display: none;
+    color: red;
+    margin: 10px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #006e65;
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+}
+
+header #img_logo {
+    display: flex;
+    flex: 0 1 auto;
+}
+
+header #img_logo img {
+    width: 25%;
+    height: auto;
+}
+
+header .nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header .nav-item div {
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.header-img {
+    margin: 30px;
+}
+
+main {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #222;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+.form-group input:focus {
+    outline: 10px;
+    border-color: #01796f;
+}
+
+.form-group .info-icon {
+    margin-left: 0.5em;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.form-group .info-icon:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #555;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+    top: -1.5em;
+    left: 1.5em;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #006e65;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background: #1eb0a4;
+}
+
+h2{
+    text-align: center;
+}

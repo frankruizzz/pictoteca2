@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictoteca</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-item">
+            <div id="img_logo">
+                <a href="index.html"><img src="img/logo_oscuro.png" alt="Pictoteca Logo"></a>
+            </div>
+            <div class="header-img" >
+                <a href="/index.html">
+                    <img src="img/casa.png" alt="Inicio">
+                    <span>Inicio</span>
+                </a>
+            </div>
+            <div id="crea-div"></div>
+            <div class="header-img">
+                <a href="explora.html">
+                    <img src="img/explora.png" alt="Explorar">
+                    <span>Explorar</span>
+                </a>
+            </div>
+            <div id="session_info"></div>
+        </div>
+    </header>
+    <main>
+        <center><h1>Explora por hashtag</h1></center>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar por etiqueta...">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <div class="galeria" id="galeria"></div>
+    </main>
+    <script src="js/buscar_etiqueta.js"></script>
+    <script src="js/crear.js"></script>
+</body>
+</html>

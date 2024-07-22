@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header>
+        <div class="nav-item">
+            <div id="img_logo">
+                <img src="img/logo_oscuro.png" alt="Pictoteca Logo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form class="registration-form" action="/php/comprobar_login.php" method="post">
+                <h2>¡Bienvenido de nuevo! Inicia sesión</h2>
+                <div class="form-group">
+                    <label for="username">Nombre de usuario
+                        <span class="info-icon" title="Su nombre de usuario es el que se muestra en cada post.">&#9432;</span>
+                    </label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña
+                        <span class="info-icon" title="Si olvidó la contraseña, ya fue p.">&#9432;</span>
+                    </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Ingresar</button>
+                </div>
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>

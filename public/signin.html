@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate en Pictoteca</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header>
+        <div class="nav-item">
+            <div id="img_logo">
+                <img src="img/logo_oscuro.png" alt="Pictoteca Logo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Regístrate</h2>
+            <form class="registration-form" action="/php/guardar.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Nombre de usuario
+                        <span class="info-icon" title="Ingrese su nombre de usuario deseado.">&#9432;</span>
+                    </label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="realname">Nombres reales
+                        <span class="info-icon" title="Ingrese su nombre completo.">&#9432;</span>
+                    </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña
+                        <span class="info-icon" title="Ingrese una contraseña segura.">&#9432;</span>
+                    </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Repetir contraseña
+                        <span class="info-icon" title="Repita la contraseña ingresada.">&#9432;</span>
+                    </label>
+                    <input type="password" id="confirm-password" name="rpassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Registrarse</button>
+                    <div id="error-message" class="error-message"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/registro.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/crear.js"></script>
+</body>
+</html>

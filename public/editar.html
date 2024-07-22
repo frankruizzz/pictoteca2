@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Imagen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-item">
+            <div id="img_logo">
+                <a href="../index.html"><img src="img/logo_oscuro.png" alt="Pictoteca Logo"></a>
+            </div>
+            <div class="header-img">
+                <a href="../index.html">
+                    <img src="img/casa.png" alt="Inicio">
+                    <span>Inicio</span>
+                </a>
+            </div>
+            <div id="crea-div"></div>
+            <div class="header-img">
+                <a href="explora.html">
+                    <img src="img/explora.png" alt="Explorar">
+                    <span>Explorar</span>
+                </a>
+            </div>
+            <div id="session_info"></div>
+        </div>
+    </header>
+    <main class="editar-main">
+        <form class="editar-form" id="editarForm">
+            <h1 id="crea">Editar Imagen</h1>
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+
+            <label for="etiqueta1">Etiquetas (hasta tres como máximo)</label><br>
+            <input type="text" id="etiqueta1" name="etiqueta1">
+            <input type="text" id="etiqueta2" name="etiqueta2">
+            <input type="text" id="etiqueta3" name="etiqueta3"><br><br>
+
+            <input type="submit" value="Actualizar">
+        </form>
+        <div class="imagen-editar-container">
+            <img id="imagen" src="" alt="Imagen">
+        </div>
+    </main>
+    <script src="js/actualizar_img.js"></script>
+    <script src="js/session2.js"></script>
+    <script src="js/crear.js"></script>
+</body>
+</html>

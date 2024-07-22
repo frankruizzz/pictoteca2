@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Imagen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-item">
+            <div id="img_logo">
+                <a href="../index.html"><img src="img/logo_oscuro.png" alt="Pictoteca Logo"></a>
+            </div>
+            <div class="header-img" >
+                <a href="../index.html">
+                    <img src="img/casa.png" alt="Inicio">
+                    <span>Inicio</span>
+                </a>
+            </div>
+            <div id="crea-div"></div>
+            <div class="header-img">
+                <a href="explora.html">
+                    <img src="img/explora.png" alt="Explorar">
+                    <span>Explorar</span>
+                </a>
+            </div>
+            <div id="session_info"></div>
+        </div>
+    </header>
+    <main>
+        <div class="error404" id="error404"></div>
+        <div class="image-page" id="image-page">
+            <div class="image-container" id="image-container">
+                <img id="imagen" src="" alt="Imagen">
+            </div>
+            <div class="info-container">
+                <div class="user-name" id="usernameImg"></div>
+                <div class="description" id="description"></div>
+                <div id="tags-container"></div>
+                <div id="comment-form">
+                    <div class="comentarios" id="commentsContainer">
+                        <h3>Comentarios</h3>
+                        <div id="comentarios">
+                            
+                        </div>
+                        <form id="commentForm">
+                            <label>Comentar</label>
+                            <input type="text" id="commentInput" placeholder="Escribe un comentario...">
+                            <button type="submit" id="buttonComment">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/session2.js"></script>
+    <script src="js/detalle_imagen.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="http://localhost:4000/socket.io/socket.io.js"></script>
+    <script src="js/mostrar_crud.js"></script>
+    <script src="js/crear.js"></script>
+</body>
+</html>
