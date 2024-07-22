@@ -14,10 +14,10 @@ const io = socketIo(server, {
 
 // NUEVO - COMENTARIOS
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'pictoteca'
+    host: process.env.HOST || 'localhost',
+    user: process.env.USER || 'root',
+    password: process.env.PASSWORD || '',
+    database: process.env.DB || 'pictoteca'
 });
 
 db.connect(err => {
